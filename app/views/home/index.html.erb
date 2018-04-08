@@ -1,0 +1,15 @@
+<h1> First test </h1>
+
+<form action="/attack" method="post">
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  My name : <input type="text" name="my"><br>
+  Your name : <input type="text" name="you"><br>
+  <input type="submit" value="attack">
+</form>
+</br></br>
+<form action="/defense" method="post">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  My name : <input type="text" name="my"><br>
+  Your name : <input type="text" name="you"><br>
+  <input type="submit" value="defense">
+</form>
